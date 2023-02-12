@@ -1,4 +1,4 @@
-<!-- TRAIT STATIC AND ABSTRACT METHOD CALLING -->
+<!-- TRAIT COMPOSITION -->
 
 <?php
 
@@ -15,9 +15,25 @@ trait One{
     abstract function employee_number();
 }
 
+trait Two{
+    public function ceo()
+    {
+        echo "CEO is Mr. R\n";
+    }
+
+    public static function cto()
+    {
+        echo "CEO is Mr. S\n";
+    }
+}
+
+trait compositTrait{
+    use One, Two;
+}
+
 class Company
 {
-    use One;
+    use compositTrait;
     public function employee_number()
     {
         echo "Total Employee Number 100\n";
@@ -27,3 +43,4 @@ class Company
 $com = new Company();
 $com->employee_number();
 Company::website();
+Company::cto();

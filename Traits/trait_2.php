@@ -1,3 +1,5 @@
+<!-- INHERITENCE AND TRAITS -->
+
 <?php
 
 trait commonCodes{

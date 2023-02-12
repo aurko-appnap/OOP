@@ -1,3 +1,5 @@
+<!-- MULTIPLE TRAITS WITH SAME NAMED METHOD. INSTEADOF, AS -->
+
 <?php
 
 trait One{
