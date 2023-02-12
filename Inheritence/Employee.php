@@ -48,4 +48,4 @@ class Person extends Employee
 
 $temp = new Person;
 
-echo $temp->getSalary();
+echo $temp->getPhone();

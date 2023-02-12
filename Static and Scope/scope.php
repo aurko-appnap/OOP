@@ -24,7 +24,7 @@ class Three extends Two{
 
     function show()
     {
-        Two::show();
+        parent::show();
         echo "Three\n";
     }
 }
